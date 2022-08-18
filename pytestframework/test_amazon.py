@@ -6,7 +6,7 @@ import time
 driver = None
 def setup_module(module):
     global driver
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome(ChromeDriverManager().install()) #Use webdrivermanager
     driver.get("https://www.amazon.com")
     driver.implicitly_wait(3)
 
